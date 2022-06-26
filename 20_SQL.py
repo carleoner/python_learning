@@ -7,6 +7,7 @@ USE ____; -> select database to work with
 CREATE TABLE user(userId int PRIMARY KEY, username varchar(10), email varchar(25), userType varchar(10));
 DROP TABLE ___;
 SHOW TABLES;
+DESCRIBE user; ->structure of the table
 
 SELECT ... [WHERE / GROUP BY / HAVING cond / ORDER BY]
 SELECT * from user
@@ -21,8 +22,6 @@ SELECT * FROM user WHERE userType = "PRO dev";
 
 '''
 
-from unittest import result
-from urllib import response
 import mysql.connector
 
 myDB = mysql.connector.connect(host = "localhost", 
