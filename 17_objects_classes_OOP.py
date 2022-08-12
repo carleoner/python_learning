@@ -5,9 +5,14 @@ class emp:
     empName = "Peter"
     empAge = 25
     empDesignation = "Manager"
+    def name():
+        print("emp")
+
+class intern(emp):
+    def name():
+        print("intern")
 
 obj = emp()
-print(obj.empAge)
 
 ######################################
 # Dynamic
